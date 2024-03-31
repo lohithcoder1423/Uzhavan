@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uzhavan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h3 class="w3-hide-medium w3-hide-small">Uzhavan</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#" class="w3-bar-item w3-button">Home</a>
+    <a href="#por" class="w3-bar-item w3-button">Control</a>
+    <a href="#contact" class="w3-bar-item w3-button">Ask</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+
+</div>
+<!-- Page content -->
+
+<div class="w3-content w3-padding-large w3-margin-top" id="Home">
+
+
+  <!-- Images (Portfolio) -->
+  <form action="/process_data" method="post" id="form1" class="w3-content w3-padding-large w3-margin-top">
+    <table>
+      <tr>
+        <td><label for="user_input">Nitrogen</label></td>
+        <td><input type="number" id="user_input" name="user_input" required></td>
+      </tr>
+      <tr>
+        <td><label for="user_input1">Phosporus</label></td>
+        <td><input type="number" id="user_input1" name="user_input1" required></td>
+      </tr>
+      <tr>
+        <td><label for="user_input2">Potasium</label></td>
+        <td><input type="number" id="user_input2" name="user_input2" required></td>
+      </tr>
+      <tr>
+        <td><label for="user_input2">City</label></td>
+        <td><input type="text" id="user_input3" name="user_input3" required></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button><input type="submit" value="Submit" class=""></button></td>
+      </tr>
+      
+    </table>
+
+  
+
+
+  
+</form>
+<h1>Suggestion</h1>
+  <h3>{{  accuracy_percentage  }}%</h3>
+  <h3>required nitirogen: {{  nn  }}</h3>
+  <h3>required phosporus: {{  pn  }}</h3>
+  <h3>required potasium: {{  kn  }}</h3>
+  <h3>{{  response  }}</h3>
+  <h3>{{  processed_data3  }}</h3>
+  <hr>
+
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+  <h1>Control</h1>
+  <table>
+  <form action="/on" method="post" id="form"class="form">
+    <tr><td>
+    <button class="on" name="on" id="on" type="submit">Motor on</button>
+  </td>
+  </tr>
+  </form>
+  <form action="/off" method="post">
+    <tr><td>
+    <button name="off" type="submit">Motor off</button>
+  </td></tr>
+
+  </form>
+  <form action="/auto" method="post">
+    <tr><td>
+    <button name="auto" type="submit">Auto</button>
+  </td></tr>
+  </form>
+  
+  
+  <tr><td>
+  <h4>status: {{on}} {{off}} {{auto}} {{pro}} {{rest}}</h4>
+</tr></td>
+
+</table>
+  
+    
+
+</div>
+
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h1>Ask your doubt</h1>
+    <form action="/answer" method="post">
+
+    <table>
+    <tr>
+      <td><label for="ques">ask your doubt</label></td>
+      <td><input  type="text" id="ques" name="ques" required></td>
+    </tr>
+    <tr>
+      <td>
+        <td colspan="2"><button><input type="submit" value="Submit"></button></td>
+      </td>
+    </tr>
+  </table>
+  <h4>{{  response1  }}</h4>
+</form>
+<footer>&copy; copyrights reserved 2024 Uzhavan</footer>
