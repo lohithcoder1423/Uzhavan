@@ -157,7 +157,7 @@ def process_data():
 
 
     weather_data = requests.get(
-        f"https://api.openweathermap.org/data/2.5/weather?q={user_input}&units=imperial&APPID={api_key}")
+        f"your_key)
 
     if weather_data.json()['cod'] == '404':
         print("No City Found")
@@ -179,7 +179,7 @@ def show_answer():
     if request.method == 'POST':
         # Get data from the text box
         user_ques = request.form['ques']
-        openai.api_key = "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"
+        openai.api_key = "Your_key"
 
         def chat_with_gpt(prompt1):
             response1 = openai.Completion.create(
