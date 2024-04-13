@@ -128,7 +128,7 @@ def process_data():
     print(f"Farming in the field percentage: {accuracy_percentage:.2f}%")
 
     # Set your OpenAI API key
-    openai.api_key = "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"
+    openai.api_key = "your_key"
 
     def chat_with_gpt(prompt):
         response = openai.Completion.create(
